@@ -11,19 +11,21 @@
 
 //1. Definición de Objetos y Variables
 var elemento,
-    imagen,
-    lienzo;
+    imagen;
 
 //1.1 Extracción de elementos desde HTML
 elemento = document.getElementById('lienzo');
 
 // Indicamos que se trata de un canvas 2d
-lienzo = elemento.getContext('2d');
-imagen = new Image();
-imagen.src = 'img/html5online.jpg';
+    imagen = new Image();
+    imagen.src = 'img/html5online.jpg';
 
 function dibujarImagen () {
     'use strict';
+
+    var lienzo;
+
+    lienzo = elemento.getContext('2d');
 
 // Extracción de elementos desde HTTP
 //    imagen.src="http://www.pildorasinformaticas.com/archivos/logos/html5online.jpg";
